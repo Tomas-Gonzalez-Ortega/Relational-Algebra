@@ -1,0 +1,81 @@
+group: EMPLOYEE
+
+EMPLOYEE = {
+	Fname:string,Minit:string, Lname:string,Essn:number, Bdate:date, Address:string, sex:string, 	Salary:number, Super_ssn:number, Dno:number
+
+	John, B, Smith, 123456789, 1965-01-09, 731_Fondren_Houston_TX , M, 30000, 333445555, 5
+	Franklin, T, Wong, 333445555, 1955-12-08, 638_Voss_Houston_TX, M, 40000, 888665555, 5
+	Alicia, J, Zelaya, 999887777, 1968-01-19, 3321_Castle_Spring_TX, F, 25000, 987654321, 4
+	Jennifer, S, Wallace, 987654321, 1941-06-20, 291_Berry_Bellaire_TX, F, 43000, 888665555, 4
+	Ramesh, K, Narayan, 666884444, 1962-09-15, 975_Fire_Oak_Humble_TX, M, 38000, 333445555, 5
+	Joyce, A, English, 453453453, 1972-07-31, 5631_Rice_Houston_TX, F, 25000, 333445555, 5
+	Ahmad, V, Jabbar, 987987987, 1969-03-29, 980_Dallas_Houston_TX, M, 25000, 987654321, 4
+	James, E, Borg, 888665555, 1937-11-10, 450_Stone_Houston_TX, M, 55000, NULL, 1
+}
+DEPARTMENT= {
+	Dname:string, Dno:number, Mgr_ssn:number, Mgr_start_date:date
+
+	Research, 5, 333445555, 1988-05-22
+	Administration, 4, 987654321, 1995-01-01
+	Headquarters, 1, 888665555, 1981-06-19 
+}
+DEPT_LOCATIONS = {
+	Dno:number, Dlocation:string
+	
+	1, Houston
+	4, Stafford
+	5, Bellaire
+	5, Sugarland
+	5, Houston
+}
+
+WORKS_ON = {
+	Essn:number, Pno:number, Hours:number
+	
+	123456789, 1, 32.5
+	123456789, 2, 7.5
+	666884444, 3, 40.0
+	453453453, 1, 20.0
+	453453453, 2, 20.0
+	333445555, 2, 10.0
+	333445555, 3, 10.0
+	333445555, 10, 10.0
+	333445555, 20, 10.0
+	999887777, 30, 30.0
+	999887777, 10, 10.0
+	987987987, 10, 35.0
+	987987987, 30, 5.0
+	987654321, 30, 20.0
+	987654321, 20, 15.0
+	888665555, 20, NULL 
+}
+PROJECT= {
+	Pname:string, Pno:number, Plocation:string,  Dno:number
+	
+	ProductX, 1, Bellaire, 5
+	ProductY, 2, Sugarland, 5
+	ProductZ, 3, Houston, 5
+	Computerization, 10, Stafford, 4
+	Reorganization, 20, Houston, 1
+	Newbenefits, 30, Stafford, 4
+}
+DEPENDENT= {
+Essn:number, Dependent_name:string, Sex:string, DBdate:date, Relationship:string
+	
+333445555, Alice, F, 1986-04-05, Daughter
+333445555, Theodore, M, 1983-10-25, Son
+333445555, Joy, F, 1958-05-03, Spouse
+987654321, Abner, M, 1942-02-28, Spouse
+123456789, Michael, M, 1988-01-04, Son
+123456789, Alice, F, 1988-12-30, Daughter
+123456789, Elizabeth, F, 1967-05-05, Spouse
+} 
+
+
+
+credits for 100276354, Ilham Fadhil 
+
+
+
+
+group: this is terrible STUDENT = {	StudID:number, name:string, address:string, gender:string, major:string	1           		 , 'Shuang'   , 'whatever 1'  , 'Feminine'   , 'COMP'         	2            	, 'Ayako'    , 'whatever 2'  , 'Feminine'   , 'b'         	3            	, 'Rene'     , 'whatever 3'  , 'Masculine'  , 'c'         	4           		 , 'Aarundeep', 'whatever 4'  , 'Masculine'  , 'd'         	5            	, 'Tom'      , 'whatever 5'  , 'Masculine'  , 'e'         }	COURSE = {	CNo:number, CName:string	11        		, 'whatever a'	22        		, 'whatever b'	33        		, 'whatever c'	44        		, 'Analysis of Algorithms'	55        		, 'Database Systems'}ENROLLED = {	StudID:number, CNo:number	1           		 , 11        	2           		 , 22        	3            	, 33        	4            	, 44        	5           		 , 55        }Credits Arundeep Chohan and Tomas Gonzalez
